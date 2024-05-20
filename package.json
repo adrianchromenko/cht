@@ -1,0 +1,27 @@
+{
+  "name": "chtcht",
+  "version": "1.0.0",
+  "description": "Real-time chatroom application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "react-draggable": "^4.4.6",
+    "react-resizable": "^3.0.5",
+    "sequelize": "^6.6.5",
+    "socket.io": "^4.0.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
